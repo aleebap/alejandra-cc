@@ -3,46 +3,15 @@
     justify-content: space-evenly;
     width: 0%;
     flex-direction: row;
-    font-size: 30px;
 }
 
 .btnClass {
-    font-size: 30px;
-    margin:20px;
+    font-size: 45px;
+    margin:27px;
     border-radius: 10px;
     background-color:#b6c2d1;
     color: black;
       transition-duration: 0.3s;
-
-}
-
-.btnClass:hover {
-background-color: #cedced;
-}
-
-@media (max-width:800px) {
-    #container1 {
-        flex-direction: row;
-        width: 0%;
-    }
-        .btnClass {
-         font-size: 15px;   
-         margin-bottom: 5px;
-        color: black;
-        }
-    #scoreId {
-        justify-content: flex-start;
-        
-        
-    }
-}
-
-@media (max-width:500px) {
-    .btnClass {
-    font-size: 0px;
-    margin:20px;
-    border-radius: 50%;
-    padding: 10px 10px;
 
 }
  #btn1ID {
@@ -57,5 +26,41 @@ background-color: #cedced;
      #btn4ID {
   background-color: #83c99a;
 }
-    
+#btn1ID:hover {
+background-color: #e0de94;
+}
+#btn2ID:hover {
+  background-color: #9ed1f0;
+}
+#btn3ID:hover {
+  background-color: #cfb5ff;
+}
+#btn4ID:hover {
+  background-color: #94e3ae;
+}
+
+
+@media (max-width:800px) {
+    #container1 {
+        flex-direction: row;
+        width: 0%;
+    }
+        .btnClass {
+        margin:15px;
+         font-size: 30px;   
+         margin-bottom: 5px;
+        color: black;
+        }
+    #scoreId {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width:500px) {
+    .btnClass {
+    font-size: 0px;
+    margin:20px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    }
 }

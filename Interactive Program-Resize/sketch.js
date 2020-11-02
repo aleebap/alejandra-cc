@@ -85,13 +85,16 @@ function changeNumberColor4(){
 }
 
 function drawCurrentScore(){
-    if(windowWidth <= 800){
-         textSize(40);
-    } else {
-        textSize(50);
-    }
+    stroke(3);
+    strokeWeight(4);
+    
     textAlign(CENTER);
-    if(windowHeight <=500) {
+    if(windowWidth <= 800){
+         textSize(70);
+    } else {
+        textSize(100);
+    }
+    if((windowWidth <=500) && (windowHeight <=500)) {
     text(currentScore, windowWidth/2, windowHeight/2 + 50)
     } else{
      text(currentScore, windowWidth/2, windowHeight/2 + 100)
